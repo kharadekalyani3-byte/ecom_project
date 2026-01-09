@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-2eQGuo+NsQO52Q8Se4ABfRu8dYdOExglaGW3Nn6g0HU="
+        crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="/js/admin.js" defer></script>
+<script>
+  $(function() {
+    $('#sidebarToggle').on('click', function() {
+      $('#sidebar').toggleClass('custom-collapsed');
+      // Optionally collapse brand and make sidebar overlay on small screen
+      // You can enhance for mobile experience in /css/admin.css
+    });
+    // Example: Highlight nav link (simulate current page)
+    $('.nav-link').on('click', function() {
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
+</body>
+</html>
